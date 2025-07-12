@@ -1,0 +1,23 @@
+<?php
+$start = 1;
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Infinite Counter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Live Counter</h1>
+  <div class="counter" id="counter"><?php echo $start; ?></div>
+
+  <div class="buttons">
+    <button class="start" onclick="startCounter()">Start</button>
+    <button class="stop" onclick="stopCounter()">Stop</button>
+    <button class="reset" onclick="resetCounter()">Reset</button>
+  </div>
+</body>
+</html>
